@@ -1,30 +1,21 @@
 #!/usr/bin/env bash
+# Display the time for 12 hours and 59 minutes.
 
-#the nested loop stuff
+hours=-1
+minutes=60
 
-
-hours=0
-
-minutes=1
-
-while [ $hours -ne 13 ]
-
+while [ "${hours}" -ne 13 ]
 do
-
-    echo "Hour: $hours"
-
-    ((hours++))
-
-    while [ $minutes -ne 60 ]
-
-    do
-
-        echo $minutes
-
-        ((minutes++))
-
-    done
-
-    ((minutes = 1))
-
+	if [ "${minutes}" -eq 60 ]
+	then
+		((hours++))
+		if [ "${hours}" -eq 13 ]
+		then
+			break
+		fi
+		echo "Hour: ${hours}"
+		minutes=1
+	fi
+	echo "${minutes}"
+	((minutes++))
 done

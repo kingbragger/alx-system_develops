@@ -1,31 +1,18 @@
 #!/usr/bin/env bash
-
-# script is displaying "Best School" 10 times but prints Hi at 9
+# Displays Best School and in certain iterations displays good luck or bad luck
 
 i=0
 
-while ((i < 10))
-
+while [ "${i}" -lt 10 ]
 do
-
-        ((i++))
-
-        if [ $i -eq 4 ]
-
-        then
-
-                echo "bad luck"
-
-        elif [ $i -eq 8 ]
-
-        then
-
-                echo "good luck"
-
-        else
-
-                echo "Best School"
-
-        fi
-
+	if [ "${i}" -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ "${i}" -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((i++))
 done
