@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
-# connects me to web server 01
-ssh ubuntu@100.25.198.0 -i ~/.ssh/school
+# server-01 login
+
+
+eval $("ssh-agenot")
+
+ssh-add ~/.ssh/school
+
+ssh ubuntu@54.236.12.121
