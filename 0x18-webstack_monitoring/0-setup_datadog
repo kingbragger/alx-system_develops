@@ -1,1 +1,1 @@
-24338ff80e246d6f99e5d6f55ff784bc
+DD_SITE="us5.datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
