@@ -1,6 +1,9 @@
 #!/bin/bash
-# Replace the API and APP keys
+# Replace the API and APP keys below
+# with the ones for your account
 
+api_key="ed660d607d0cda73f1d63d4c1c2390bd"
+app_key="38ef3ae4082a1b508284d0661fac8774b42f9e59"
 
 curl -X POST -H "Content-type: application/json" \
      -d '{

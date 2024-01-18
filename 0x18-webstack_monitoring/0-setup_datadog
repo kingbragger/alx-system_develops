@@ -1,1 +1,2 @@
-DD_SITE="us5.datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
+ed660d607d0cda73f1d63d4c1c2390bd
+38ef3ae4082a1b508284d0661fac8774b42f9e59
