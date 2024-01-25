@@ -1,0 +1,13 @@
+[Unit]
+Description=Your Application Server
+After=network.target
+
+[Service]
+ExecStart=/path/to/your/application-server-command
+WorkingDirectory=/path/to/your/application/directory
+User=your_username
+Group=your_group_name
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
